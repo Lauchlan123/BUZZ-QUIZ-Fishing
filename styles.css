@@ -1,0 +1,195 @@
+body {
+   background-image: radial-gradient(red,darkred,darkred,red);
+    background-size: 500%;
+    animation: background-animation 30s infinite alternate;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.titlePage {
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, white, red, yellow, black, red, yellow, white);
+    background-size: 1440%;
+    display: flex;
+    flex-direction: column;
+    animation: background-animation 50s infinite alternate;
+
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.startQuizDiv {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    margin-bottom: 10rem;
+}
+
+.startQuiz {
+    border-radius: 8px;
+    width: 6rem;
+    height: 1.7rem;
+    background-image: linear-gradient(90deg, white, yellow, red, black, yellow, red, white);
+    background-size: 1440%;
+    animation: background-animation 50s infinite alternate;
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+/* Start of Questions */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.questionTitle {
+    justify-content: center;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+/* Question 1 */
+
+.image1 {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inp1 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.input1 {
+    border-radius: 8px;
+    width: 10rem;
+    height: 1.3rem;
+    text-align: center;
+    border-right: 2px black solid;
+}
+
+.confirm {
+    border-radius: 8px;
+    margin-left: -.1rem;
+    border-left: 2px black solid;
+}
+
+/* Question 2 */
+
+.image2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+}
+
+.inp2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.input2 {
+    border-radius: 8px;
+    width: 18rem;
+    height: 1.3rem;
+    text-align: center;
+    border-right: 2px black solid;
+}
+
+.confirm2 {
+    border-radius: 8px;
+    margin-left: -.1rem;
+    border-left: 2px black solid;
+}
+
+.pres {
+    display: flex;
+    justify-content: center;
+}
+
+.pageResponse {
+    color: red;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Results */
+
+.Answer {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.resultimg {
+    display: flex;
+    justify-content: center;
+}
+
+.resultimage {
+    width: 30%;
+    height: 30%;
+}
+
+.description {
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+}
+
+/* display none*/
+
+.questions {
+    display: none;
+}
+
+.result1 {
+    display: none;
+}
+
+.result2 {
+    display: none;
+}
+
+.result3 {
+    display: none;
+}
+
+.result4 {
+    display: none;
+}
+
+.pageResponse {
+    display: none;
+}
