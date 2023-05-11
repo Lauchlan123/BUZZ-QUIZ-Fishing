@@ -1,0 +1,328 @@
+<!DOCTYPE html> <html><head>
+        <title>BUZZ QUIZ! Fishing</title>
+    <style>body {
+   background-image: radial-gradient(red,darkred,darkred,red);
+    background-size: 500%;
+    animation: background-animation 30s infinite alternate;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.titlePage {
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, white, red, yellow, black, red, yellow, white);
+    background-size: 1440%;
+    display: flex;
+    flex-direction: column;
+    animation: background-animation 50s infinite alternate;
+
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.startQuizDiv {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    margin-bottom: 10rem;
+}
+
+.startQuiz {
+    border-radius: 8px;
+    width: 6rem;
+    height: 1.7rem;
+    background-image: linear-gradient(90deg, white, yellow, red, black, yellow, red, white);
+    background-size: 1440%;
+    animation: background-animation 50s infinite alternate;
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+/* Start of Questions */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.questionTitle {
+    justify-content: center;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+/* Question 1 */
+
+.image1 {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inp1 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.input1 {
+    border-radius: 8px;
+    width: 10rem;
+    height: 1.3rem;
+    text-align: center;
+    border-right: 2px black solid;
+}
+
+.confirm {
+    border-radius: 8px;
+    margin-left: -.1rem;
+    border-left: 2px black solid;
+}
+
+/* Question 2 */
+
+.image2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.img2 {
+    display: flex;
+    justify-content: center;
+}
+
+.inp2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.input2 {
+    border-radius: 8px;
+    width: 18rem;
+    height: 1.3rem;
+    text-align: center;
+    border-right: 2px black solid;
+}
+
+.confirm2 {
+    border-radius: 8px;
+    margin-left: -.1rem;
+    border-left: 2px black solid;
+}
+
+.pres {
+    display: flex;
+    justify-content: center;
+}
+
+.pageResponse {
+    color: red;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Results */
+
+.Answer {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.resultimg {
+    display: flex;
+    justify-content: center;
+}
+
+.resultimage {
+    width: 30%;
+    height: 30%;
+}
+
+.description {
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+}
+
+/* display none*/
+
+.questions {
+    display: none;
+}
+
+.result1 {
+    display: none;
+}
+
+.result2 {
+    display: none;
+}
+
+.result3 {
+    display: none;
+}
+
+.result4 {
+    display: none;
+}
+
+.pageResponse {
+    display: none;
+}</style></head>
+    <body>
+
+        <div class="titlePage">
+            <h1 class="Title">Buzz Feed Quiz
+            </h1>
+            <h2 class="subTitle">Which fishing reel should you be?</h2>
+            <div class="startQuizDiv">
+                <button class="startQuiz">Start Quiz &gt;</button>
+            </div>
+        </div>
+
+        <div class="questions">
+
+            <div class="quest1">
+                <p class="questionTitle">How many adventures have you been on?</p>
+                <div class="img1">
+                    <img class="image1" alt="Adventure" src="https://wwwnc.cdc.gov/travel/images/mountain-biker.jpg">
+                </div>
+                <div class="inp1">
+                    <input placeholder="Amount of adventures" class="input1">
+                    <button class="confirm">✓</button>
+                </div>
+            </div>
+
+            <div class="quest2">
+                <p class="questionTitle">Do you try many things or do you choose one thing and stick to it?</p>
+                <div class="img2">
+                    <img class="image2" alt="Scuba Diving" src="https://www.diveoclock.com/blog/Wreck_Deep/deep_wreck-4.jpg">
+                </div>
+                <div class="inp2">
+                    <input placeholder="try many things OR one thing and stick to it" class="input2">
+
+                    <button class="confirm2">✓</button>
+                </div>
+            </div>
+            <div class="pres">
+                <p class="pageResponse"></p>
+            </div>
+        </div>
+        <div class="result1">
+            <p class="questionTitle">You should use a</p>
+            <h2 class="Answer">Spinning Reel</h2>
+            <div class="resultimg">
+                <img class="resultimage" alt="Reel_Type" src="https://cdn.shopify.com/s/files/1/0361/0050/5733/products/PENNSpinfisherVISpinning_5500_1819_alt1_1024x1024.png?v=1636071891">
+            </div>
+            <p class="description">Spinning reels are versatile and are quick to learn how to use!</p>
+        </div>
+
+        <div class="result2">
+            <p class="questionTitle">You should use a</p>
+            <h2 class="Answer">Spincast Reel</h2>
+            <div class="resultimg">
+                <img class="resultimage" alt="Reel_Type" src="https://cdn.shopify.com/s/files/1/0384/6645/3641/products/SILVERCAST-SC100B_de4d096a-b203-48f9-acc3-e47bde1c884f_580x.png?v=1657552904">
+            </div>
+            <p class="description">Spincast reels are used by first timers. They are the easiest to use, but once damaged, they are difficult to fix!</p>
+        </div>
+
+        <div class="result3">
+            <p class="questionTitle">You should use a</p>
+            <h2 class="Answer">Baitcaster Reel</h2>
+            <div class="resultimg">
+                <img class="resultimage" alt="Reel_Type" src="https://cdn.n2erp.co.nz/lan_770b92b8-644f-43b5-8385-4c7aee811ca7/images/products/large/pennsqualllowprofile_y4qkxcuc.e1r.png">
+            </div>
+            <p class="description">Baitcasters are expensive and take some time to learn how to use. If you have a baitcaster, you are dedicated to fishing!</p>
+        </div>
+
+        <div class="result4">
+            <p class="questionTitle">You should use a</p>
+            <h2 class="Answer">Trolling Reel</h2>
+            <div class="resultimg">
+                <img class="resultimage" alt="Reel_Type" src="https://media.purefishing.com/s/purefishing/1447299_20DLC_MS?$collection_tile$33">
+            </div>
+            <p class="description">Trolling reels are for ocean boat fishing. If you own a trolling reel. You love fishing for sea monsters! </p>
+        </div>
+
+    
+<script>
+/*__POPCODESTART__*/
+var startQuiz = document.querySelector(".startQuiz");
+var titlePage = document.querySelector(".titlePage");
+var questions = document.querySelector(".questions");
+var quest1 = document.querySelector(".quest1");
+var quest2 = document.querySelector(".quest2");
+var confirm = document.querySelector(".confirm");
+var confirm2 = document.querySelector(".confirm2");
+var pageResponse = document.querySelector(".pageResponse");
+var result1 = document.querySelector(".result1");
+var result2 = document.querySelector(".result2");
+var result3 = document.querySelector(".result3");
+var result4 = document.querySelector(".result4");
+
+startQuiz.onclick = function () {
+  titlePage.style.display = "none";
+  questions.style.display = "block";
+};
+
+confirm.onclick = function () {};
+
+confirm2.onclick = function () {
+  var input = document.querySelector(".input1").value;
+  console.log(input);
+  var inputNumber = Number(input);
+  console.log(inputNumber);
+  var input2 = document.querySelector(".input2").value;
+  console.log(input2);
+
+  if (inputNumber < 0) {
+    pageResponse.style.display = "block";
+    pageResponse.innerHTML = "Positive values only";
+  } else if (inputNumber < 10 && input2 === "try many things") {
+    pageResponse.style.display = "none";
+    questions.style.display = "none";
+    result2.style.display = "block";
+  } else if (inputNumber < 10 && input2 === "one thing and stick to it") {
+    pageResponse.style.display = "none";
+    questions.style.display = "none";
+    result1.style.display = "block";
+  } else if (inputNumber >= 10 && input2 === "try many things") {
+    pageResponse.style.display = "none";
+    questions.style.display = "none";
+    result3.style.display = "block";
+  } else if (inputNumber >= 10 && input2 === "one thing and stick to it") {
+    pageResponse.style.display = "none";
+    questions.style.display = "none";
+    result4.style.display = "block";
+  } else {
+    pageResponse.style.display = "block";
+    pageResponse.innerHTML = "Retry";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInN0YXJ0UXVpeiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInRpdGxlUGFnZSIsInF1ZXN0aW9ucyIsInF1ZXN0MSIsInF1ZXN0MiIsImNvbmZpcm0iLCJjb25maXJtMiIsInBhZ2VSZXNwb25zZSIsInJlc3VsdDEiLCJyZXN1bHQyIiwicmVzdWx0MyIsInJlc3VsdDQiLCJvbmNsaWNrIiwic3R5bGUiLCJkaXNwbGF5IiwiaW5wdXQiLCJ2YWx1ZSIsImNvbnNvbGUiLCJsb2ciLCJpbnB1dE51bWJlciIsIk51bWJlciIsImlucHV0MiIsImlubmVySFRNTCJdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSUEsU0FBUyxHQUFHQyxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsWUFBdkIsQ0FBaEI7QUFDQSxJQUFJQyxTQUFTLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixDQUFoQjtBQUNBLElBQUlFLFNBQVMsR0FBR0gsUUFBUSxDQUFDQyxhQUFULENBQXVCLFlBQXZCLENBQWhCO0FBQ0EsSUFBSUcsTUFBTSxHQUFHSixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsQ0FBYjtBQUNBLElBQUlJLE1BQU0sR0FBR0wsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLENBQWI7QUFDQSxJQUFJSyxPQUFPLEdBQUdOLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixDQUFkO0FBQ0EsSUFBSU0sUUFBUSxHQUFHUCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsV0FBdkIsQ0FBZjtBQUNBLElBQUlPLFlBQVksR0FBR1IsUUFBUSxDQUFDQyxhQUFULENBQXVCLGVBQXZCLENBQW5CO0FBQ0EsSUFBSVEsT0FBTyxHQUFHVCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsVUFBdkIsQ0FBZDtBQUNBLElBQUlTLE9BQU8sR0FBR1YsUUFBUSxDQUFDQyxhQUFULENBQXVCLFVBQXZCLENBQWQ7QUFDQSxJQUFJVSxPQUFPLEdB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b2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnN0YXJ0UXVpelwiKTtcbmxldCB0aXRsZVBhZ2UgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnRpdGxlUGFnZVwiKTtcbmxldCBxdWVzdGlvbnMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnF1ZXN0aW9uc1wiKTtcbmxldCBxdWVzdDEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnF1ZXN0MVwiKTtcbmxldCBxdWVzdDIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnF1ZXN0MlwiKTtcbmxldCBjb25maXJtID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jb25maXJtXCIpO1xubGV0IGNvbmZpcm0yID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jb25maXJtMlwiKTtcbmxldCBwYWdlUmVzcG9uc2UgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnBhZ2VSZXNwb25zZVwiKTtcbmxldCByZXN1bHQxID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHQxXCIpO1xubGV0IHJlc3VsdDIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJlc3VsdDJcIik7XG5sZXQgcmVzdWx0MyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0M1wiKTtcbmxldCByZXN1bHQ0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHQ0XCIpO1xuXG5zdGFydFF1aXoub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIHRpdGxlUGFnZS5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgcXVlc3Rpb25zLnN0eWxlLmRpc3BsYXkgPSBcImJsb2NrXCI7XG59O1xuXG5jb25maXJtLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcblxufTtcblxuY29uZmlybTIub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIGxldCBpbnB1dCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuaW5wdXQxXCIpLnZhbHVlO1xuICAgIGNvbnNvbGUubG9nKGlucHV0KTtcbiAgICBsZXQgaW5wdXROdW1iZXIgPSBOdW1iZXIoaW5wdXQpO1xuICAgIGNvbnNvbGUubG9nKGlucHV0TnVtYmVyKTtcbiAgICBsZXQgaW5wdXQyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5pbnB1dDJcIikudmFsdWU7XG4gICAgY29uc29sZS5sb2coaW5wdXQyKTtcbiAgICBpZiAoaW5wdXROdW1iZXIgPCAwKSB7XG4gICAgICAgIHBhZ2VSZXNwb25zZS5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgICAgICBwYWdlUmVzcG9uc2UuaW5uZXJIVE1MID0gXCJQb3NpdGl2ZSB2YWx1ZXMgb25seVwiO1xuICAgIH0gZWxzZSBpZiAoaW5wdXROdW1iZXIgPCAxMCAmJiBpbnB1dDIgPT09IFwidHJ5IG1hbnkgdGhpbmdzXCIpIHtcbiAgICAgICAgcGFnZVJlc3BvbnNlLnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbiAgICAgICAgcXVlc3Rpb25zLnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIjtcbiAgICAgICAgcmVzdWx0Mi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgIH0gZWxzZSBpZiAoaW5wdXROdW1iZXIgPCAxMCAmJiBpbnB1dDIgPT09IFwib25lIHRoaW5nIGFuZCBzdGljayB0byBpdFwiKSB7XG4gICAgICAgIHBhZ2VSZXNwb25zZS5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgICAgIHF1ZXN0aW9ucy5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgICAgIHJlc3VsdDEuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICB9IGVsc2UgaWYgKGlucHV0TnVtYmVyID49IDEwICYmIGlucHV0MiA9PT0gXCJ0cnkgbWFueSB0aGluZ3NcIikge1xuICAgICAgICBwYWdlUmVzcG9uc2Uuc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xuICAgICAgICBxdWVzdGlvbnMuc3R5bGUuZGlzcGxheSA9IFwibm9uZVwiO1xuICAgICAgICByZXN1bHQzLnN0eWxlLmRpc3BsYXkgPSBcImJsb2NrXCI7XG4gICAgfSBlbHNlIGlmIChpbnB1dE51bWJlciA+PSAxMCAmJiBpbnB1dDIgPT09IFwib25lIHRoaW5nIGFuZCBzdGljayB0byBpdFwiKSB7XG4gICAgICAgIHBhZ2VSZXNwb25zZS5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgICAgIHF1ZXN0aW9ucy5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCI7XG4gICAgICAgIHJlc3VsdDQuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICB9IGVsc2Uge1xuICAgICAgICBwYWdlUmVzcG9uc2Uuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICAgICAgcGFnZVJlc3BvbnNlLmlubmVySFRNTCA9IFwiUmV0cnlcIjtcbiAgICB9XG59OyJdfQ==</script></body></html>
